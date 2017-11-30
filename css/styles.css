@@ -1,12 +1,40 @@
-.logo {
-	width:11.5%;
-	float: left;
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, 'Ariel';
 }
 
-.verticalLine{
-	color: blue;
-border-right: thick solid #ff0000}
+.logo {
+	width:85px;
+	margin-top: 0px;
+	float: left;
+	position:relative;
+	padding-bottom: 20px;
+}
 
 .login{
 	float:right;
+	position:inherit;
+	font-size: 11px;
+}
+
+
+.leftTab{
+	float: left;
+	margin-bottom: -14px;
+}
+
+.leftTab li{
+	position: relative;
+	margin-top:0px;
+	font-size: 11px;
+	width:100px;
+	list-style-type: none;
+	margin-left:-32px;
+}
+
+.panel-header #sbHeader{
+	padding-left: 25px;
+	margin-bottom:-10px;
+	font-size: 10px;
 }
