@@ -1,0 +1,12 @@
+.logo {
+	width:11.5%;
+	float: left;
+}
+
+.verticalLine{
+	color: blue;
+border-right: thick solid #ff0000}
+
+.login{
+	float:right;
+}
