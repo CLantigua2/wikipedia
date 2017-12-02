@@ -7,12 +7,15 @@
 	<meta charset="utf-8">
 	<title>Wikipedia, the free encyclopedia</title>
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="css/flexboxgrid.css" type="text/css">
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
 </head>
 
-<div class="container-fluid">
-	<span class="login">
+<body>
+
+	<div class="container-fluid">
+		<span class="login">
 <ul class="nav nav-tabs">
 	<li role="presentation" class="active"><a href="#"><i class="fa fa-user" aria-hidden="true"></i>
 Not logged in</a></li>
@@ -22,20 +25,24 @@ Not logged in</a></li>
 	<li role="presentation" class="active"><a href="#">Log in</a></li>
 </ul>
 </span>
-</div>
-<!-- Sign in tab end!-->
+	</div>
+	<!-- Sign in tab end!-->
 
-<!-- start of main page header -->
-<div class="container grid-custom">
-	<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<div class="mainPageHeader">
-			<ul>
-				<li id="Main" class="selected">
-					<span>
+	<!-- start of main page header -->
+	<div class="container-fluid">
+		<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="mainPageHeader">
+				<ul>
+					<li id="Main" class="selected">
+						<span class="mp-head-left">
 							<a href="#" title="View the content page">Main Page </a>
 						</span>
-				</li>
-				<li id="MainPage"><a href="#"> Talk </a></li>
+					</li>
+					<li id="MainPage"><a href="#"> Talk </a></li>
+				</ul>
+
+				<span class="mp-head-right">
+			<ul>
 				<li><a href="#"> Read </a></li>
 				<li><a href="#"> View source </a></li>
 				<li><a href="#"> View history </a></li>
@@ -43,180 +50,143 @@ Not logged in</a></li>
 				<button><i class="fa fa-search" aria-hidden="true"></i>
 					</button>
 			</ul>
-		</div>
-	</div>
-
-</div>
-<!-- end of main page header -->
-
-<!-- start of center header-->
-
-<div class="center-container">
-	<div class="row centerTabMain col-xs-8 col-sm-8 col-md-8 col-lg-8">
-		<div class="panel panel-default">
-			<div class="panel-body">
-				<h4>Welcome to <a href="#">Wikipedia</a>,</h4>
-				<p>the <a href="#">free encyclopedia </a>that <a href="#">anyone can edit.</a></p>
-				<ul class="centerTab">
-					<li><a href="#">Wikimedia Commons</a></li>
-					<li><a href="#">MediaWiki</a></li>
-					<li><a href="#">Meta-Wiki</a></li>
-					<li><a href="#">Wikispecies</a></li>
-					<li><a href="#">Wikibooks</a></li>
-					<li><a href="#">Wikidata</a></li>
-					<li><a href="#">Wikinews</a></li>
-					<li><a href="#">WikiQuote</a></li>
-					<li><a href="#">Wikisource</a></li>
-					<li><a href="#">Wikiversity</a></li>
-					<li><a href="#">Wikivoyage</a></li>
-					<li><a href="#">Wikitionary</a></li>
-				</ul>
+		</span>
 			</div>
 		</div>
-	</div>
-</div>
-<!-- end of center header-->
 
-<!-- Left side tab start-->
-<div class="leftsideTab">
+	</div>
+	<!-- end of main page header -->
+
+	<!-- start of center header->
+
 	<div class="container-fluid">
-		<div class="row">
-			<div class="panel">
-				<div class="panel-heading">
-					<img class="logo" src="img/wikipedia-logo.png" alt="Wikipedia logo">
-					<br>
-				</div>
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<ul class="leftTab">
-							<li><a href="#">Main page</a></li>
-							<li><a href="#">Contents</a></li>
-							<li><a href="#">Featured content</a></li>
-							<li><a href="#">Current events</a></li>
-							<li><a href="#">Random article</a></li>
-							<li><a href="#">Donate to Wikipedia</a></li>
-							<li><a href="#">Wikipedia store</a></li>
-						</ul>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<h4>Welcome to <a href="#">Wikipedia</a>,</h4>
+						<p>the <a href="#">free encyclopedia </a>that <a href="#">anyone can edit.</a></p>
 					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				<div class="panel panel-default">
-					<div class="panel-header">
-						<p id="sbHeader">Interaction</p>
-					</div>
-					<div class="panel-body">
-						<ul class="leftTab">
-							<li><a href="#">Help</a></li>
-							<li><a href="#">About Wikipedia</a></li>
-							<li><a href="#">Community portal</a></li>
-							<li><a href="#">Recent changes</a></li>
-							<li><a href="#">Contact page</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				<div class="panel panel-default">
-					<div class="panel-header">
-						<p id="sbHeader">Tools</p>
-					</div>
-					<div class="panel-body">
-						<ul class="leftTab">
-							<li><a href="#">What links here</a></li>
-							<li><a href="#">Related changes</a></li>
-							<li><a href="#">Upload file</a></li>
-							<li><a href="#">Special pages</a></li>
-							<li><a href="#">Permanent Link</a></li>
-							<li><a href="#">Page information</a></li>
-							<li><a href="#">Wikidata item</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				<div class="panel panel-default">
-					<div class="panel-header">
-						<p id="sbHeader">Tools</p>
-					</div>
-					<div class="panel-body">
-						<ul class="leftTab">
-							<li><a href="#">What links here</a></li>
-							<li><a href="#">Related changes</a></li>
-							<li><a href="#">Upload file</a></li>
-							<li><a href="#">Special pages</a></li>
-							<li><a href="#">Permanent Link</a></li>
-							<li><a href="#">Page information</a></li>
-							<li><a href="#">Wikidata item</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				<div class="panel panel-default">
-					<div class="panel-header">
-						<p id="sbHeader">Print/export</p>
-					</div>
-					<div class="panel-body">
-						<ul class="leftTab">
-							<li><a href="#">Create a book</a></li>
-							<li><a href="#">Download as PDF</a></li>
-							<li><a href="#">Printable version</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				<div class="panel panel-default">
-					<div class="panel-header">
-						<p id="sbHeader">In other projects</p>
-					</div>
-					<div class="panel-body">
-						<ul class="leftTab">
-							<li><a href="#">Wikimedia Commons</a></li>
-							<li><a href="#">MediaWiki</a></li>
-							<li><a href="#">Meta-Wiki</a></li>
-							<li><a href="#">Wikispecies</a></li>
-							<li><a href="#">Wikibooks</a></li>
-							<li><a href="#">Wikidata</a></li>
-							<li><a href="#">Wikinews</a></li>
-							<li><a href="#">WikiQuote</a></li>
-							<li><a href="#">Wikisource</a></li>
-							<li><a href="#">Wikiversity</a></li>
-							<li><a href="#">Wikivoyage</a></li>
-							<li><a href="#">Wikitionary</a></li>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<ul class="centerTab">
+							<li><a href="#">Arts</a></li>
+							<li><a href="#">Biography</a></li>
+							<li><a href="#">Geography</a></li>
+							<li><a href="#">History</a></li>
+							<li><a href="#">Mathematics</a></li>
+							<li><a href="#">Science</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!- end of center header-->
+
+	<!-- Left side tab start-->
+	<div class="leftsideTab">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<img class="logo" src="img/wikipedia-logo.png" alt="Wikipedia logo">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<ul class="leftTab">
+						<li><a href="#">Main page</a></li>
+						<li><a href="#">Contents</a></li>
+						<li><a href="#">Featured content</a></li>
+						<li><a href="#">Current events</a></li>
+						<li><a href="#">Random article</a></li>
+						<li><a href="#">Donate to Wikipedia</a></li>
+						<li><a href="#">Wikipedia store</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h6 id="sbHeader">Interaction</h6>
+					<ul class="leftTab">
+						<li><a href="#">Help</a></li>
+						<li><a href="#">About Wikipedia</a></li>
+						<li><a href="#">Community portal</a></li>
+						<li><a href="#">Recent changes</a></li>
+						<li><a href="#">Contact page</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h6 id="sbHeader">Tools</h6>
+					<ul class="leftTab">
+						<li><a href="#">What links here</a></li>
+						<li><a href="#">Related changes</a></li>
+						<li><a href="#">Upload file</a></li>
+						<li><a href="#">Special pages</a></li>
+						<li><a href="#">Permanent Link</a></li>
+						<li><a href="#">Page information</a></li>
+						<li><a href="#">Wikidata item</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h6 id="sbHeader">Tools</h6>
+					<ul class="leftTab">
+						<li><a href="#">What links here</a></li>
+						<li><a href="#">Related changes</a></li>
+						<li><a href="#">Upload file</a></li>
+						<li><a href="#">Special pages</a></li>
+						<li><a href="#">Permanent Link</a></li>
+						<li><a href="#">Page information</a></li>
+						<li><a href="#">Wikidata item</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h6 id="sbHeader">Print/export</h6>
+					<ul class="leftTab">
+						<li><a href="#">Create a book</a></li>
+						<li><a href="#">Download as PDF</a></li>
+						<li><a href="#">Printable version</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h6 id="sbHeader">In other projects</h6>
+					<ul class="leftTab">
+						<li><a href="#">Wikimedia Commons</a></li>
+						<li><a href="#">MediaWiki</a></li>
+						<li><a href="#">Meta-Wiki</a></li>
+						<li><a href="#">Wikispecies</a></li>
+						<li><a href="#">Wikibooks</a></li>
+						<li><a href="#">Wikidata</a></li>
+						<li><a href="#">Wikinews</a></li>
+						<li><a href="#">WikiQuote</a></li>
+						<li><a href="#">Wikisource</a></li>
+						<li><a href="#">Wikiversity</a></li>
+						<li><a href="#">Wikivoyage</a></li>
+						<li><a href="#">Wikitionary</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<!-- left side tab end-->
 
 
 
-	<body>
 
-	</body>
+</body>
 
 </html>

@@ -1,15 +1,13 @@
 body{
-	margin: 0;
 	padding: 10;
 	font-family: sans-serif, 'Ariel';
+	font-size: 10px;
 }
 
 .logo {
 	width:85px;
-	margin-top: 0px;
-	margin-left: 20px;
 	float: left;
-	padding-bottom: 20px;
+	margin: 0px;
 }
 
 .login{
@@ -17,19 +15,17 @@ body{
 	font-size: 11px;
 }
 
-.leftTab{
-	float: left;
-	margin-bottom: -4px;
-	position: inherit;
-	width: 70%;
+
+.panel-body{
+	width: 150px;
 }
 
 .leftTab li{
 	margin-top:0px;
 	font-size: 11px;
-	width:100px;
+	width:100%;
 	list-style-type: none;
-	margin-left:-32px;
+	margin-left:-39px;
 }
 
 .panel-header #sbHeader{
@@ -51,12 +47,26 @@ body{
 	display: inline;
 }
 
-.centerTabMain {
+.centerTab {
 float: right;
 width: 90%;
 
 }
 
+.mp-head-right ul, li {
+	float: left;
+}
+
+.mp-head-left {
+	float: left;
+}
+
 .leftsideTab {
-	margin-bottom: -600px;
+	float: left;
+	margin-right:0px;
+
+}
+
+.centerTab li{
+	float: right;
 }
