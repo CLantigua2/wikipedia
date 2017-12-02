@@ -1,25 +1,24 @@
 body{
-	padding: 10;
+	margin: 10px;
 	font-family: sans-serif, 'Ariel';
 	font-size: 10px;
 }
 
+a {
+	text-decoration: none;
+	color: #0645ad;
+	background: none;
+}
+
+/*Left side tab*/
 .logo {
 	width:85px;
 	float: left;
 	margin: 0px;
 }
-
-.login{
-	float:right;
-	font-size: 11px;
+.leftTab {
+	margin-top: 10px;
 }
-
-
-.panel-body{
-	width: 150px;
-}
-
 .leftTab li{
 	margin-top:0px;
 	font-size: 11px;
@@ -27,13 +26,56 @@ body{
 	list-style-type: none;
 	margin-left:-39px;
 }
+/*end of left side tab*/
 
-.panel-header #sbHeader{
-	padding-left: 25px;
-	margin-bottom:-10px;
-	font-size: 10px;
+/*login tab*/
+.login{
+	float:right;
+	font-size: 11px;
+}
+/*end of login tab*/
+
+
+.leftsideTab {
+	float: left;
+	margin-right:0px;
 }
 
+.centerTab li{
+	float: right;
+}
+
+.leftsideTab.conatiner-fluid {
+	padding:0px;
+	margin:0px;
+}
+
+.leftsideTab.conatiner-fluid.row {
+	padding:-10px;
+	margin:-10px;
+	width: 250px;
+}
+
+/*CenterHeaderList*/
+.container-custom {
+	width: 450px;
+	float: right;
+	width: 90%;
+}
+
+.container-custom ul{
+	padding: 0;
+	margin: 0;
+}
+
+.container-custom ul li {
+	width: 150px;
+	height: 20px;
+	float: right;
+}
+/*end of centerHeaderList*/
+
+/*Welcome to wikiheader*/
 .mainPageHeader ul{
 	position: relative;
 	float: right;
@@ -47,26 +89,53 @@ body{
 	display: inline;
 }
 
-.centerTab {
-float: right;
-width: 90%;
-
-}
 
 .mp-head-right ul, li {
 	float: left;
+
 }
 
 .mp-head-left {
-	float: left;
-}
-
-.leftsideTab {
-	float: left;
-	margin-right:0px;
-
-}
-
-.centerTab li{
 	float: right;
+	display: block;
+}
+/*end of Welcome to WikiHeader*/
+
+#topLinks {
+	position:fixed;
+	top:120px;
+	left:1400px;
+}
+
+#topLinks ul{
+	padding-right: 50px;
+	margin-right: 50px;
+	min-height: 20px;
+}
+
+#topLinks ul li {
+	padding-top: 5px;
+
+}
+
+#mp-topbanner {
+	position: fixed;
+	left:200px;
+	top:98px
+	border: 2px solid black;
+}
+
+.mp-head-right ul{
+	position:fixed;
+	left: 1500px;
+}
+
+.mp-head-right ul li{
+	margin-right: 20px;
+}
+
+.search {
+	position: fixed;
+  left: 1800px;
+  width: 300px;
 }
