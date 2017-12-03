@@ -1,7 +1,7 @@
 body{
 	margin: 10px;
 	font-family: sans-serif, 'Ariel';
-	font-size: 10px;
+	font-size: 14px;
 }
 
 a {
@@ -12,16 +12,18 @@ a {
 
 /*Left side tab*/
 .logo {
-	width:85px;
+	position: relative;
+	right: 2em;
+	width:180px;
 	float: left;
 	margin: 0px;
 }
 .leftTab {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 .leftTab li{
 	margin-top:0px;
-	font-size: 11px;
+	font-size: 12px;
 	width:100%;
 	list-style-type: none;
 	margin-left:-39px;
@@ -37,6 +39,9 @@ a {
 
 
 .leftsideTab {
+	position: relative;
+	font-size: 16px;
+	bottom: 8em;
 	float: left;
 	margin-right:0px;
 }
@@ -76,12 +81,29 @@ a {
 /*end of centerHeaderList*/
 
 /*Welcome to wikiheader*/
+.mainPageHeader {
+	position: absolute;
+	top:9.5em;
+}
+.mainPageHeader ul #Main {
+	position: relative;
+	bottom: 6em;
+	right:17em;
+	font-size: 90%;
+}
+
+.mainPageHeader ul #MainPage {
+	position: relative;
+	bottom: 6em;
+	right:16em;
+	font-size: 90%;
+}
+
 .mainPageHeader ul{
 	position: relative;
 	float: right;
 	display: inline;
 	list-style-type: none;
-	font-size: 10px;
 	margin-left: 0px;
 }
 
@@ -101,9 +123,12 @@ a {
 /*end of Welcome to WikiHeader*/
 
 #topLinks {
-	position:absolute;
+	position:relative;
 	top:50px;
 	left:1400px;
+	margin:0.4em;
+	 width:22em;
+	 text-align:center
 }
 
 #topLinks ul{
@@ -118,24 +143,24 @@ a {
 }
 
 #mp-topbanner {
-	position: fixed;
+	position: relative;
 	left:200px;
-	top:98px;
-}
-
-.mainPageHeader ul #Main {
-	position: fixed;
-	left:150px;
-}
-
-.mainPageHeader ul #MainPage {
-	position: fixed;
-	left: 220px;
+	top:75px;
+	clear:both;
+	box-sizing:border-box;
+	width:1600px;
+	height:100px;
+	background-color:#f9f9f9;
+	color:#000;
+	white-space:nowrap;
 }
 
 .mp-head-right ul{
-	position:fixed;
-	left: 1500px;
+	position:relative;
+	left: 144em;
+	bottom: 6em;
+	font-size: 90%;
+
 }
 
 .mp-head-right ul li{
@@ -143,7 +168,17 @@ a {
 }
 
 .search {
-	position: fixed;
+	position: relative;
   left: 1800px;
+	bottom: 6em;
   width: 300px;
+}
+
+.MainPageBG {
+	width:55%;
+	border:1px solid #cef2e0;
+	padding:0;
+	background:#f5fffa;
+	vertical-align: top;
+	color: #000;
 }
