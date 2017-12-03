@@ -40,8 +40,9 @@ a {
 
 .leftsideTab {
 	position: relative;
+	right:14em;
 	font-size: 16px;
-	bottom: 8em;
+	bottom: 18em;
 	float: left;
 	margin-right:0px;
 }
@@ -88,14 +89,14 @@ a {
 .mainPageHeader ul #Main {
 	position: relative;
 	bottom: 6em;
-	right:17em;
+	right:28em;
 	font-size: 90%;
 }
 
 .mainPageHeader ul #MainPage {
 	position: relative;
 	bottom: 6em;
-	right:16em;
+	right:26em;
 	font-size: 90%;
 }
 
@@ -117,6 +118,7 @@ a {
 }
 
 .mp-head-left {
+	position: static;
 	float: right;
 	display: block;
 }
@@ -124,7 +126,7 @@ a {
 
 #topLinks {
 	position:relative;
-	top:50px;
+	bottom:3em;
 	left:1400px;
 	margin:0.4em;
 	 width:22em;
@@ -139,7 +141,8 @@ a {
 
 #topLinks ul li {
 	padding-top: 5px;
-
+	padding-right: 50px;
+	margin-right: 50px;
 }
 
 #mp-topbanner {
@@ -148,7 +151,8 @@ a {
 	top:75px;
 	clear:both;
 	box-sizing:border-box;
-	width:1600px;
+	border: 1px solid silver;
+	width:2000px;
 	height:100px;
 	background-color:#f9f9f9;
 	color:#000;
