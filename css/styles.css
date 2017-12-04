@@ -11,6 +11,15 @@ a {
 }
 
 /*Left side tab*/
+#mw-panel {
+	font-size: inherit
+	position: relative;
+	bottom:10em ;
+	width: 10em;
+	left: 0;
+	padding-left: 0.5em;
+}
+
 .logo {
 	position: relative;
 	right: 2em;
@@ -40,16 +49,13 @@ a {
 
 .leftsideTab {
 	position: relative;
-	right:14em;
+	right:0em;
 	font-size: 16px;
-	bottom: 18em;
+	bottom: 55em;
 	float: left;
 	margin-right:0px;
 }
 
-.centerTab li{
-	float: right;
-}
 
 .leftsideTab.conatiner-fluid {
 	padding:0px;
@@ -62,41 +68,24 @@ a {
 	width: 250px;
 }
 
-/*CenterHeaderList*/
-.container-custom {
-	width: 450px;
-	float: right;
-	width: 90%;
-}
-
-.container-custom ul{
-	padding: 0;
-	margin: 0;
-}
-
-.container-custom ul li {
-	width: 150px;
-	height: 20px;
-	float: right;
-}
-/*end of centerHeaderList*/
-
 /*Welcome to wikiheader*/
+.MainAllBox {
+	border: 2px solid #000;
+}
 .mainPageHeader {
 	position: absolute;
 	top:9.5em;
 }
+
 .mainPageHeader ul #Main {
-	position: relative;
-	bottom: 6em;
-	right:28em;
 	font-size: 90%;
+	color: #000;
 }
 
 .mainPageHeader ul #MainPage {
 	position: relative;
 	bottom: 6em;
-	right:26em;
+	right:20em;
 	font-size: 90%;
 }
 
@@ -113,12 +102,14 @@ a {
 }
 
 
-.mp-head-right ul, li {
-	float: left;
+.mp-head-right ul li {
+	float: right;
 }
 
 .mp-head-left {
-	position: static;
+	position: relative;
+	bottom: 6em;
+	right: 29em;
 	float: right;
 	display: block;
 }
@@ -185,4 +176,123 @@ a {
 	background:#f5fffa;
 	vertical-align: top;
 	color: #000;
+}
+
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+}
+
+#mp-upper {
+	position: relative;
+	left: 14em;
+	top:5.5em;
+	width: 80%;
+	margin-top: 4px;
+	border-top: 4px;
+	border-spacing: 0px;
+}
+
+#mp-tf-left .MainPageBG {
+	width: 55%;
+	border: 1px solid #cef2e0;
+	padding: 0;
+	background: #f5fffa;
+	vertical-align: top;
+	color: #000;
+}
+
+#mp-tfa-h2 {
+	clear: both;
+	margin:0.5em;
+	background: #cef2e0;
+	font-size: inherent;
+	font-size:100%;
+	border: 1px solid #a3bfb1;
+	color: #000;
+	padding:0.2em 04em;
+}
+
+#mp-tfa {
+	padding: 0.1em 0.6em;
+
+}
+#mp-tfa-img {
+	float: left;
+	margin: 0.5em 0.9em 0.4em 0em;
+}
+
+.thumbinner-mp-thumb {
+	background: transparent;
+	border: none;
+	padding: 0;
+	max-width: 102px;
+}
+
+.tfa-recent {
+	text-align: right;
+}
+
+.tfa-footer-hlist-noprint{
+	text-align: right;
+}
+
+#mp-dyk-h2 {
+	clear: both;
+	margin: 0.5em;
+	background: #cef2e0;
+	font-family: inherit;
+	font-size: inherit;
+	border: 1px solid #a3bfb1;
+	color: #000;
+	padding: 0.2em 0.4em;
+}
+
+#mp-dyk {
+	padding: 0.1em 0.6em 0.5em;
+}
+
+#mp-dyk-img {
+	float: right;
+	margin-left: 0.5em;
+}
+
+.thumbcaption {
+	padding: 0.25em 0;
+	word-wrap: break-word;
+	font-size: 12px;
+	display: inline-block;
+}
+
+.dyk-footer-hlist-noprint {
+	margin-top: 0.5em;
+	text-align: right;
+}
+
+#mp-right {
+	width: 45%;
+	border: 1px solid #cedff2;
+	padding: 0;
+	background: #f5faff;
+	vertical-align: top;
+}
+
+#mp-itn-h2 {
+	margin: 0.5em;
+	background: #cedff2;
+	font-family: inherit;
+	font-size: inherit;
+	border: 1px solid #a3b0bf;
+	color: #000;
+	padding:0.2em 0.4em;
+}
+
+#mp-itn {
+	padding: 0.1em 0.6em;
+	float: right;
+}
+
+.mp-itn {
+	float: right;
+	margin-left: 0.5em;
 }
